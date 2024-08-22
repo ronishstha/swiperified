@@ -3,7 +3,7 @@ import Icon from "../atoms/Icon";
 import Image from "../atoms/Image";
 import Title from "../atoms/Title";
 
-const Card = () => {
+const Card = ({ active = false }) => {
   return (
     <div className="h-[500px] w-[600px] rounded-3xl bg-gradient-to-br from-10% to-60% from-secondary to-tertiary p-[5px]">
       <div

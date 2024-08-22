@@ -6,7 +6,7 @@ A package for creating cards that can be swiped/dragged up/down.
 
 ## Usage
 ```js
-import { Swiper } from "swiperify";
+import { Swiper } from "swiperified";
 
 const App = () => {
 	return <Swiper items={5} />;

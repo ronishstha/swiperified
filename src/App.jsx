@@ -1,12 +1,9 @@
-import CardList from "./components/organism/CardList";
+import Swiper from "./components/pages/Swiper";
 
 function App() {
   
   return (
-    <>
-      <h1>Swiper</h1>
-      <CardList items={[1, 2, 3, 4]} />
-    </>
+    <Swiper />
   );
 }
 

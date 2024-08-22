@@ -1,4 +1,4 @@
-# Swiperify
+# swiperified
 
 A package for creating cards that can be swiped/dragged up/down.
 

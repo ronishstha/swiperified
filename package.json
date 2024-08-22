@@ -1,5 +1,5 @@
 {
-  "name": "swiperify",
+  "name": "swiperified",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "private": false,

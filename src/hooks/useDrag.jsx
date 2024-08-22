@@ -1,6 +1,6 @@
-import { useState, useRef, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 
-const useDrag = (itemsLength) => {
+const useDrag = (items) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [dragStart, setDragStart] = useState(null);
   const [dragOffset, setDragOffset] = useState(0);
@@ -17,7 +17,7 @@ const useDrag = (itemsLength) => {
   };
 
   const handleDragEnd = () => {
-    if (dragOffset > 50 && currentIndex < itemsLength - 1) {
+    if (dragOffset > 50 && currentIndex < items - 1) {
       setCurrentIndex(currentIndex + 1);
     } else if (dragOffset < -50 && currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
@@ -51,7 +51,7 @@ const useDrag = (itemsLength) => {
       slider.removeEventListener("mouseup", handleDragEnd);
       slider.removeEventListener("mouseleave", handleDragEnd);
     };
-  }, [currentIndex, dragStart, dragOffset, itemsLength]);
+  }, [currentIndex, dragStart, dragOffset]);
 
   return {
     currentIndex,
